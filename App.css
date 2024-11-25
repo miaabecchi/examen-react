@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.game-container {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cell.hidden {
+  background-color: #e0e0e0;
+}
+
+.cell.revealed {
+  background-color: #f63030;
+}
+
+.cell.treasure {
+  background-color: rgb(110, 248, 95);
+}
+
+.victory-message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: rgb(5, 5, 254);
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.restart-button:hover {
+  background-color: #0056b3;
+}
+
+
